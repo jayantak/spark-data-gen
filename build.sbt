@@ -1,10 +1,3 @@
-
-name := "spark-data-generator"
-
-version := "0.1"
-
-scalaVersion := "2.12.2"
-
-lazy val core = Project("spark-data-generator", file("."))
+lazy val core = Project("spark-data-generator", file("core"))
   .settings(Settings.core: _*)
   .settings(Defaults.itSettings : _*)

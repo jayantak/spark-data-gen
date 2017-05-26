@@ -1,4 +1,4 @@
-import sbt.Keys.{ivyScala, _}
+import sbt.Keys._
 import sbt._
 
 import scala.collection.immutable.Seq
@@ -6,9 +6,9 @@ import scala.collection.immutable.Seq
 object Settings {
 
   private lazy val generalSettings = Seq(
-    name := "etlclient2",
-    version := "1.0",
-    scalaVersion := "2.11.0",
+    name := "spark-data-generator",
+    version := "0.1",
+    scalaVersion := "2.12.2",
     scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfuture", "-Xlint", "-Xfatal-warnings")
   )
   private lazy val coreSettings = Seq(
