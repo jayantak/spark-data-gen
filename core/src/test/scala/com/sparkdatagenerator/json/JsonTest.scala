@@ -9,7 +9,7 @@ class JsonTest extends FunSuite with Matchers {
 
   private implicit val formats = DefaultFormats
 
-  test("com.sparkdatagenerator.feed.Feed structure should be read from json string") {
+  test("Feed structure should be read from json string") {
 
     val jsonString =
       """{ "feeds" :
