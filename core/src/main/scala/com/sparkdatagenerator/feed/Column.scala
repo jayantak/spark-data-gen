@@ -1,3 +1,3 @@
 package com.sparkdatagenerator.feed
 
-case class Column(name: String, datatype: String, key: Option[String])
+case class Column(name: String, datatype: String, from: Option[String])

@@ -22,7 +22,7 @@ class JsonTest extends FunSuite with Matchers {
                       },
                     { "name" : "column2",
                       "datatype" : "integer",
-                      "key" : "true"
+                      "from" : "otherFeed"
                       }
                   ]
               }
@@ -34,7 +34,7 @@ class JsonTest extends FunSuite with Matchers {
       Feed("feed1",
         List(
           Column("column1", "string", None),
-          Column("column2", "integer", Some("true"))
+          Column("column2", "integer", Some("otherFeed"))
         )
       )
     ))
