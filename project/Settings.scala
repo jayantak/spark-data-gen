@@ -12,7 +12,6 @@ object Settings {
     scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfuture", "-Xlint", "-Xfatal-warnings")
   )
   private lazy val coreSettings = Seq(
-    organization := "com.periscope.price.client2.etl",
     libraryDependencies ++= Dependencies.all,
     parallelExecution in Test := false
   )
